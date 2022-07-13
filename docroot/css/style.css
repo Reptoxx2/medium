@@ -1,0 +1,219 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.header {
+  flex-grow: 1;
+}
+.header__row-back {
+  background: #dcdcdc;
+}
+.header__row {
+  padding: 65px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__phone {
+  color: #767676;
+  font-size: 40px;
+  line-height: 46px;
+}
+.header__menu-back {
+  background: #767676;
+}
+.header__menu {
+  padding: 25px 0px;
+  display: flex;
+  justify-content: center;
+}
+.header__menu ul {
+  color: white;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+}
+.header__menu ul li:last-child:after {
+  content: "";
+  padding: 0px;
+}
+.header__menu ul li:after {
+  height: 30px;
+  padding: 0px 20px;
+  content: "|";
+}
+
+.content {
+  margin-bottom: 195px;
+}
+.content__background-wrap {
+  background: #f8f8f8;
+  margin-bottom: 30px;
+}
+.content__background {
+  width: 100%;
+  height: 400px;
+  background: url("../img/Слой 6 kопирова.png") no-repeat;
+  background-position: center -60px;
+}
+.content__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 10px;
+  gap: 60px;
+}
+.content__news-block {
+  flex: 2 2 100px;
+  min-width: 350px;
+  height: fit-content;
+  padding: 22px 34px;
+  background: #767676;
+  font-weight: 400;
+  display: inline-flex;
+  flex-direction: column;
+}
+.content__news-block a {
+  color: white;
+  text-decoration: underline;
+  align-self: flex-end;
+}
+.content__news-block h3 {
+  font-size: 40px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 39px;
+}
+.content__news-block ul {
+  color: white;
+}
+.content__news-block ul li {
+  margin-bottom: 30px;
+}
+.content__about-company {
+  display: flex;
+  flex-direction: column;
+}
+.content__about-company h3 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 34px;
+}
+.content__about-company p {
+  color: #767676;
+  margin-bottom: 32px;
+}
+
+.footer {
+  flex-shrink: 0;
+  background: #767676;
+}
+.footer__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 65px 0px;
+  color: white;
+}
+.footer__menu ul {
+  text-decoration: underline;
+}
+.footer__cp img {
+  margin-top: 6px;
+  margin-right: 10px;
+}
+.footer__cp p {
+  display: inline-block;
+}
+/*# sourceMappingURL=style.css.map */
